@@ -1,0 +1,14 @@
+/* Regla 1 */
+#principal .caja p span {
+    color: brown !important;
+}
+
+/* Regla 2 */
+section div p.info span {
+    color: magenta;
+}
+
+/* Regla 3 */
+#principal span {
+    color: black;
+}

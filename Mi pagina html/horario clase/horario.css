@@ -1,0 +1,35 @@
+td{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(40, 40, 164);
+    border-top: 1px;
+    
+}
+table{
+    background-color: rgba(86, 192, 253, 0.788);
+    border-style: inset;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 0px;
+    border-color: rgb(40, 40, 164);
+    border-collapse:collapse;
+    border-style: solid;
+}
+th{
+    background-color:rgb(40, 40, 164) ;
+    color:rgb(255, 255, 255);
+    border-color:aliceblue;
+    border-style:solid;
+    border-bottom: 1px;
+}
+.redes{
+    text-align: right;
+}
+.horario{
+    border-left: 0px;
+}
+tr{
+    border-left: 2px;
+    border-right: 2px;
+}

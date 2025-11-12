@@ -1,0 +1,16 @@
+#contenedor p {
+  background-color: lightblue !important;
+}
+
+div.caja p.texto {
+  color: green;
+  background-color: lightyellow;
+}
+
+.advertencia .resaltado {
+  color: orange;
+}
+
+.texto span {
+  color: red !important;
+}

@@ -1,0 +1,14 @@
+body {
+    background-image: url(IMAGENES/a2579bf02faac33543de669438905619.jpg);
+}
+
+table {
+    background-color: rgba(199, 187, 25, 0.753);
+}
+
+.sobre {
+    text-align: left;
+    font-style: italic;
+    word-spacing: 2px;
+    font-weight: bold;
+}

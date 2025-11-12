@@ -1,0 +1,63 @@
+body {
+    background-image: url(IMAGENES/fondo.jpeg);
+}
+
+table {
+    background-color: rgba(29, 88, 29, 0.904);
+}
+
+.sobre {
+    font-style: italic;
+    word-spacing: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.elemento {
+    font-style: italic;
+    word-spacing: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.fortalezas {
+    font-style: italic;
+    word-spacing: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.debilidades {
+    font-style: italic;
+    word-spacing: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.estadisticas {
+    font-style: italic;
+    word-spacing: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.movimientos {
+    font-style: italic;
+    word-spacing: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.mejores {
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    word-spacing: 2px;
+}
+
+.evs {
+    font-style: italic;
+    word-spacing: 2px;
+    text-align: left;
+    font-weight: bold;
+}

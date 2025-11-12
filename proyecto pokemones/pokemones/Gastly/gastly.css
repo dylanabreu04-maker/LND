@@ -1,0 +1,22 @@
+body {
+    background-image: url(IMAGENES/fondo.jpg);
+}
+
+table {
+    background-color: #8c07adea;
+}
+
+.sobre {
+    text-align: left;
+    font-style: italic;
+    word-spacing: 2px;
+    font-weight: bold;
+}
+
+a {
+    text-align: left;
+    font-style: italic;
+    word-spacing: 2px;
+    font-weight: bold;
+    color: black;
+}

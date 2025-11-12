@@ -1,0 +1,14 @@
+/* Regla 1 */
+div.principal p {
+    color: blue;
+}
+
+/* Regla 2 */
+.contenedor .texto {
+    color: red;
+}
+
+/* Regla 3 */
+div p.texto {
+    color: green;
+}

@@ -1,0 +1,35 @@
+table{
+    border-width: 3px;
+    border-style: inset;
+    border-color: aquamarine;
+}
+td{
+    border-width: 3px;
+    border-style: inset;
+    border-color: aquamarine;
+}
+th{
+    border-width: 3px;
+    border-style: inset;
+    border-color: rgb(100, 229, 8);
+}
+ul{
+    list-style-type: disc;
+}
+body{
+    background-color: rgba(137, 43, 226, 0.703);
+    background-position: center;
+}
+.vale{
+    text-align: center;
+    color: brown;
+    word-spacing: 2px;
+    font-size: large;
+    font-style: italic;
+}
+.otra{
+    font-size: small;
+    font-style: normal;
+    color:aliceblue;
+    word-spacing: 5px;
+}

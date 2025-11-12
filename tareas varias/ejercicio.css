@@ -1,0 +1,17 @@
+/* regla 1
+
+#cabecera nav ul li a {
+    color: orange;
+}
+/* regla 2 */
+header nav li.item-menu a{
+    color: purple;
+}
+
+/* regla 3 */
+
+#cabecera .item-menu a{
+    color: cyan;
+} 
+
+

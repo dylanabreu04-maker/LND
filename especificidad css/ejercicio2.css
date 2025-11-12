@@ -1,0 +1,14 @@
+/* Regla 1 */
+#cabecera nav ul li a {
+    color: orange;
+}
+
+/* Regla 2 */
+header nav li.item-menu a {
+    color: purple;
+}
+
+/* Regla 3 */
+#cabecera .item-menu a {
+    color: cyan;
+}

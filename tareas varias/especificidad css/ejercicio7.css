@@ -1,0 +1,16 @@
+td {
+  background-color: white;
+}
+
+.datos tr td {
+  font-style: italic;
+}
+
+tr.fila-impar td {
+  background-color: #f2f2f2; /* Un gris claro */
+}
+
+td[data-estado="importante"] {
+  font-weight: bold;
+  background-color: yellow;
+}

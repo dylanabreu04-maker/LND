@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
+.articulo .titulo {
+  color: navy;
+}
+
+div.articulo p {
+  color: grey;
+  font-size: 16px;
+}
+
+.meta .autor {
+  font-weight: bold;
+  color: black;
+}
+
+.contenido p {
+  color: darkslategray;
+}

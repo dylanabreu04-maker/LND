@@ -1,0 +1,27 @@
+.recreo{
+    text-align: center;
+}
+
+table{
+    border-width: 3px;
+    border-style: solid;
+    background-color: aqua;
+}
+td{
+    border-style:solid;
+    border-width: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+}
+.borde{
+    border-style:solid;
+    border-width: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+}
+.dias{
+    border-style: solid;
+    border-top:1px;
+}

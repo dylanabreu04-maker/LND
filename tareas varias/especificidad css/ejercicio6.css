@@ -1,0 +1,13 @@
+#menu-principal li a {
+  text-decoration: none;
+  color: blue;
+}
+
+#menu-principal a.activo {
+  color: red;
+  font-style: italic;
+}
+
+.item-menu a:hover {
+  text-decoration: underline;
+}
