@@ -11,6 +11,25 @@
 
 </body>
 <script>
+    let nombre = parseInt(prompt("Ingrese el nombre del postulante: "));
+    let preguntas_tot = parseInt(prompt("Cantidad de preguntas realizadas: "));
+    let preguntas_bien = parseint(prompt("Cantidad de preguntas correctas: "));
+
+    let porcentaje = (preguntas_bien / preguntas_tot) * 100;
+    let nivel;
+
+    if (porcentaje >= 90 || porcentaje === 100) {
+        document.write("Esta en el nivel superior");
+    }
+    else if (porcentaje >= 75 && porcentaje < 90) {
+        document.write("Esta en el nivel medio");
+    }
+    else if (porcentaje >= 50 && porcentaje < 75) {
+        document.write("Esta en el nivel regular");
+    }
+    else {
+        document.write("Esta fuera del nivel");
+    }
 
 </script>
 
