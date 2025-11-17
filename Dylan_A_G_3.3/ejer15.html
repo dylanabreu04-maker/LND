@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let numero = parseint(prompt("Escriba un numero(1...999): "));
+
+    if (numero >= 1 && numero <= 9) {
+        document.write("El numero tiene un solo digito");
+    }
+    else if (numero >= 10 && numero <= 99) {
+        document.write("El numero tiene dos digitos");
+    }
+    else if (numero >= 100 && numero <= 999) {
+        document.write("El numero tiene tres digitos");
+    }
+    else {
+        document.write("El numero no tiene ni 1 ni 2 ni 3 digitos");
+    }
+</script>
+
+</html>
