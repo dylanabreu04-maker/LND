@@ -1,88 +1,172 @@
+/*     ESTILOS GENERALES     */
+
 body {
-    width: 100vw;
-    background-image: linear-gradient(45deg, white, black, red);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0px;
-    padding: 0px;
-    overflow-y: scroll;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-a{
+/*  CABECERA Y PIE DE PÁGINA */
+
+#principio,
+#fin {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    color: #222;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#fin {
+    margin-top: auto;
+}
+
+/*     CONTENEDOR CENTRAL    */
+
+#central {
+    display: flex;
+    height: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+
+/*      MENÚ LATERAL         */
+
+#menu {
+    width: 250px;
+    background: linear-gradient(180deg, #b8c6db, #f5f7fa);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#menu a {
     text-decoration: none;
-
-}
-.bulbasaur {
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
+    background: linear-gradient(90deg, #89f7fe, #66a6ff);
+    color: #222;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 18px;
     font-weight: bold;
-    text-shadow: 2px 2px 3px #5b8f08;
-}
-
-.charmander {
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px #c26712;
+    transition: 0.25s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.20);
 }
 
-.pichu {
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
-    font-weight: bold;
-    text-shadow: 2px 2px 3px #dac406;
+/*Colores de los pokemons */
+
+#menu a.bulbasaur:hover {
+    background: #78C850;
 }
 
-.froakie {
-    color: #0586db;
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
-    font-weight: bold;
+#menu a.charmander:hover {
+    background: #F08030;
 }
 
-.gastly {
-    color: #bb04e97a;
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
-    font-weight: bold;
+#menu a.chimchar:hover {
+    background: #F08030;
 }
 
-.scraggy {
-    color: #aa9742;
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
-    font-weight: bold;
+#menu a.froakie:hover {
+    background: #6890F0;
 }
 
-.chimchar {
-    color: #a75716;
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
-    font-weight: bold;
+#menu a.gastly:hover {
+    background: #705898;
 }
 
-.groudon {
-    color: #8f0808;
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
-    font-weight: bold;
+#menu a.pichu:hover {
+    background: #F8D030;
 }
 
-.Rayquaza {
-    color: #206d0c;
-    text-align: left;
-    word-spacing: 2px;
-    font-style: italic;
+#menu a.scraggy:hover {
+    background: #E04006;
+}
+
+#menu a.groudon:hover {
+    background: #C22E28;
+}
+
+#menu a.rayquaza:hover {
+    background: #00A86B;
+}
+
+/* Hover animado extra */
+#menu a:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.30);
+    filter: brightness(1.2);
+}
+
+/* Grid derecha */
+
+#grid {
+    flex: 1;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 220px);
+    gap: 18px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas */
+    grid-template-rows: 220px;
+    /* 1 fila */
+    gap: 18px;
+}
+
+
+/* cajas de los pokemons */
+
+.pokemon-container {
+    background: #ffffffaa;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+}
+
+.pokemon-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Gif */
+.gif {
+    width: 150px;
+    height: auto;
+}
+
+/* Audio */
+
+.sonido-pokemon {
+    background: linear-gradient(135deg, #c3cfe2, #e2ebf0);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.20);
+    font-size: 20px;
     font-weight: bold;
+    color: #444;
 }
