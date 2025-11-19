@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let punto1 = parseInt(prompt("Escriba cordenada x: "));
+    let punto2 = parseInt(prompt("Escriba la cordenada y: "));
+
+    if (punto1 > 0 && punto2 > 0) {
+        document.write("Las cordenadas indican el cuadrante 1");
+    }
+    else if (punto1 > 0 && punto2 < 0) {
+        document.write("Las cordenadas indican el cuadrante 3");
+    }
+    else if (punto1 < 0 && punto2 < 0) {
+        document.write("Las cordenadas indican el cuadrante 4");
+    }
+    else if (punto1 < 0 && punto2 > 0) {
+        document.write("Las cordenadas indican el cuadrante 2");
+    }
+    else {
+        document.write("Se introdujeron mal las coordenadas");
+    }
+
+
+</script>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let numero1 = parseInt(prompt("Ingrese un numero: "));
+    let numero2 = parseInt(prompt("Ingrese un numero: "));
+    let numero3 = parseInt(prompt("Ingrese un numero: "));
+
+    if (numero1 === numero2 && numero1 === numero3) {
+        let suma;
+        let multiplicacion;
+        suma = numero1 + numero2;
+        multiplicacion = suma * numero3;
+        document.write("La suma de los dos primeros valores es: " + suma);
+        document.write("<br>");
+        document.write("La multiplicacion sería: " + multiplicacion);
+    }
+    else {
+        document.write("los valores no son iguales");
+    }
+
+
+</script>
+
+</html>

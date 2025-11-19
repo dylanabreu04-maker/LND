@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let sueldo = parseInt(prompt("Cantidad del sueldo: "));
+    let antiguedad = parseInt(prompt("Antiguedad trabajando en años: "));
+
+    if (sueldo < 500 && antiguedad >= 10) {
+        let sueldo_a_pagar;
+        sueldo_a_pagar = (sueldo * 0.2) + sueldo;
+        document.write("El sueldo a pagar será de: " + sueldo_a_pagar);
+    }
+    else if (sueldo < 500 && antiguedad < 10) {
+        let sueldo_a_pagar;
+        sueldo_a_pagar = (sueldo * 0.05) + sueldo;
+        document.write("El sueldo a pagar será de: " + sueldo_a_pagar);
+    }
+    else if (sueldo >= 500) {
+        document.write("El sueldo será de: " + sueldo);
+    }
+</script>
+
+</html>
