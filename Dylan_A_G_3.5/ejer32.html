@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let contador = 0;
+    let pares = 0;
+    let impares = 0;
+
+    while (contador < 5) {
+        let numeros = parseInt(prompt("Introduzca 5 valores enteros: "));
+        if (numeros % 2 == 0) {
+            pares += 1;
+        }
+        if (numeros % 2 != 0) {
+            impares += 1;
+        }
+
+        contador += 1;
+    }
+    document.write("los numeros impares son en total: " + impares);
+    document.write("<br>");
+    document.write("Los numeros pares son en total: " + pares);
+</script>
+
+</html>

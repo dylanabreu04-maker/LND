@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let mayores = 0;
+    let menores = 0;
+    let contador = 1;
+
+    while (contador <= 10)
+    {
+        let nota = parseInt(prompt("Ingrese 10 notas: "));
+
+        if (nota <= 7)
+        {
+            menores += 1;
+        }
+        else if (nota > 7)
+        {
+            mayores += 1;
+        }
+        contador += 1;
+    }
+    document.write("Menores o iguales a 7:" + menores);
+    document.write("<br>");
+    document.write("Mayores o iguales a 7: "+ mayores);
+</script>
+</html>

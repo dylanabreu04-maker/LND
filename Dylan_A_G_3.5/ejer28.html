@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let contador = 0;
+    let sueldo_pequeño = 0;
+    let sueldo_grande = 0;
+    let total_sueldo = 0;
+
+    while (contador < 5) {
+        let sueldo = parseInt(prompt("Ingrese los sueldos: "));
+        if (sueldo >= 100 && sueldo <= 300) {
+            sueldo_pequeño += 1;
+        }
+
+        if (sueldo >= 300) {
+            sueldo_grande += 1;
+        }
+        contador += 1;
+        total_sueldo += sueldo;
+
+    }
+    document.write("los empleados que cobran entre 100 y 300 son: " + sueldo_pequeño);
+    document.write("<br>");
+    document.write("los empleados que cobran mas de 300 son: " + sueldo_grande);
+    document.write("<br>");
+
+</script>
+
+</html>
