@@ -9,6 +9,46 @@
     
 </body>
 <script>
-    
+    let totalpersonas = 0;
+    let totalvarones = 0;
+    let totalmujeres = 0;
+    let varones16a65 = 0;
+
+    let documento;
+
+    document.write("Resultados del Censo");
+
+    do {
+        documento = parseInt(prompt("Ingrese número de documento (0 para terminar):"));
+
+        if (documento != 0) 
+        {
+            let edad = parseInt(prompt("Ingrese edad:"));
+            let genero = prompt("Ingrese genero ('femenino' o 'masculino'):");
+
+            totalpersonas++;
+
+            if (genero === "masculino") 
+            {
+                totalVarones++;
+                if (edad >= 16 && edad <= 65) 
+                {
+                    varones16a65++;
+                }
+
+            } 
+            else if (genero === "femenino") 
+            {
+                totalmujeres++;
+            }
+        }
+
+    } while (documento != 0);
+
+
+    document.write("Cantidad total de personas censadas: " + totalpersonas + "<br>");
+    document.write("Cantidad de varones: " + totalvarones + "<br>");
+    document.write("Cantidad de mujeres: " + totalmujeres + "<br>");
+    document.write("Varones entre 16 y 65 años: " + varones16a65 + "<br>");
 </script>
 </html>
