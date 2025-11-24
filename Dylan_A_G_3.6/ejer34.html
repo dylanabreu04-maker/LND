@@ -9,8 +9,42 @@
     
 </body>
 <script>
-    let numero_cuenta = parseInt(prompt("Introduzca el numero de la cuenta: "))
-    let nombre_cliente = parseInt(prompt("Introduzca su nombre: "))
-    let saldo_actual = parseInt(prompt("Introduzca el saldo actual"))
+    
+    let sumaAcreedores = 0;
+    let numeroCuenta;
+
+    do {
+        numeroCuenta = parseInt(prompt("Ingrese número de cuenta (negativo para terminar):"));
+
+        if (numeroCuenta >= 0) {
+
+            let nombre = prompt("Nombre del cliente:");
+            let saldo = parseInt(prompt("Saldo actual:"));
+
+            let estado;
+
+            if (saldo > 0) 
+            {
+                estado = "Acreedor";
+                sumaAcreedores += saldo;  
+            } 
+            else if (saldo < 0) 
+            {
+                estado = "Deudor";
+            } 
+            else 
+            {
+                estado = "Nulo";
+            }
+            document.write("<br>");
+            document.write("Número de cuenta: " + numeroCuenta + "<br>");
+            document.write("Cliente: " + nombre + "<br>");
+            document.write("Saldo: " + saldo + "<br>");
+            document.write("Estado: " + estado + "<br>");
+        }
+
+    } while (numeroCuenta >= 0);
+
+    document.write("<br>Suma total de saldos acreedores: " + sumaAcreedores + "<br>");
 </script>
 </html>
