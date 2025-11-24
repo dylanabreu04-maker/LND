@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let contador = 0;
+    
+
+    while (contador != 9999 )
+    {
+        contador += contador;
+        contador = parseInt(prompt("Introduzca un numero: "));
+        
+    
+        if (contador == 9999)
+        {
+            document.write("La ejecucion a finalizado");
+        }
+    
+    }
+    document.write(" "+contador);
+    document.write("<br>")
+    if (contador > 0)
+    {
+        document.write("El valor acumulado es mayor a 0");
+    }
+    else if (contador == 0)
+    {
+        document.write("El valor acumulado es igual a 0");
+    }
+    else if (contador < 0)
+    {
+        document.write("El valor acumulado es menor a 0");
+    }
+
+
+</script>
+</html>
