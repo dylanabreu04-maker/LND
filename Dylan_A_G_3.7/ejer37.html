@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let sumadelos5ultimos = 0;
+
+    for (let i=1; i <= 10; i++)
+    {
+        let numero = parseFloat(prompt("Escribe un número: "));
+
+        if (i > 5)
+        {
+            sumadelos5ultimos += numero;
+        }
+    }
+    document.write("La suma de los ultimos 5 numeros es: " + sumadelos5ultimos);
+</script>
+</html>

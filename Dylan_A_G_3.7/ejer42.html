@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let negativos = 0;
+    let positivos = 0;
+    let multiplos15 = 0;
+    let sumaPares = 0;
+
+    for (let i = 1; i <= 10; i++) {
+        let num = parseInt(prompt("Ingrese el valor entero " + i + ":"));
+
+        if (num < 0) {
+            negativos++;
+        }
+
+        if (num > 0) {
+            positivos++;
+        }
+
+        if (num % 15 === 0) {
+            multiplos15++;
+        }
+
+        if (num % 2 === 0) {
+            sumaPares += num;
+        }
+    }
+
+    document.write("Cantidad de valores negativos: " + negativos + "<br>");
+    document.write("Cantidad de valores positivos: " + positivos + "<br>");
+    document.write("Cantidad de múltiplos de 15: " + multiplos15 + "<br>");
+    document.write("Suma de los números pares: " + sumaPares + "<br>");
+</script>
+</html>

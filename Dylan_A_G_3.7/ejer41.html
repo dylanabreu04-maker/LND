@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let puntos = parseInt(prompt("Ingrese la cantidad de puntos a procesar: "));
+
+    let cuadrante1 = 0;
+    let cuadrante2 = 0;
+    let cuadrante3 = 0;
+    let cuadrante4 = 0;
+
+    for (let i = 1; i <= puntos; i++)
+    {
+        let x = parseInt(prompt("Introduzca las coordenadas de X: "));
+        let y = parseInt(prompt("Introduzca las coordenadas de Y: "));
+
+        if ( x > 0 && y > 0)
+        {
+            cuadrante1++;
+        } else if ( x < 0 && y > 0){
+            cuadrante2++;
+        } else if ( x < 0 && y < 0) {
+            cuadrante3++;
+        } else if ( x > 0 && y < 0) {
+            cuadrante4++;
+        }
+    }
+    document.write("<br>Cantidad de puntos en el primer cuadrante: " + cuadrante1);
+    document.write("<br>Cantidad de puntos en el primer cuadrante: " + cuadrante2);
+    document.write("<br>Cantidad de puntos en el primer cuadrante: " + cuadrante3);
+    document.write("<br>Cantidad de puntos en el primer cuadrante: " + cuadrante4);
+</script>
+</html>

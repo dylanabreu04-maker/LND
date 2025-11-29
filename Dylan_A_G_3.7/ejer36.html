@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let mayores12 = 0;
+
+    for (let i = 1; i <= 3; i++)
+    {
+        let base = parseFloat(prompt('Introduzca la base del triangulo: '));
+        let altura = parseFloat(prompt('Introduzca la altura del triangulo: '));
+
+        let superficie = (base * altura) /2;
+
+        document.write("La base del triangulo es: " + base);
+        document.write("<br>");
+        document.write("La altura del triangulo es: " + altura);
+        document.write("<br>");
+        document.write("La superficie del triangulo es: " + superficie);
+        document.write("<br>");
+
+        if (superficie > 12)
+        {
+            mayores12++;
+        }
+    }
+    document.write("Los triangulos con mas de 12 de superficie son: " + mayores12);
+    document.write("<br>");
+    document.write("<br>");
+</script>
+</html>
