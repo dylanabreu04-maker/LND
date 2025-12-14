@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a = parseInt(prompt("Introduzca un número entero: "));
+    let b = parseInt(prompt("Introduzca un número entero: "));
+    let c = parseInt(prompt("Introduzzca un número entero: "));
+    function mayorNum(a, b, c)
+    {
+        
+        let mayor = a;
+
+        if (b > mayor) mayor = b;
+
+        if (c > mayor) mayor = c;
+
+        return mayor;
+    }
+
+    let resultado = mayorNum(a, b, c);
+    document.write("El número más alto es: "+ resultado);
+</script>
+</html>
