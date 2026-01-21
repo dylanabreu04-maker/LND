@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //clases(plano)
+    class puerta{
+        ancho;
+        alto;
+        material;
+        color;
+        abierta;
+
+        constructor(ancho, alto, material, color)
+        {
+            this.alto = alto;
+            this.ancho = ancho;
+            this.material = material;
+            this.color = color;
+            this.abierta = false;
+        }
+
+
+        abrir(){
+            this.abierta = true
+        }
+
+    }
+
+    let puertaDeEjemplo = new puerta(200, 70, "madera", "marron");
+    alert("La puerta está abierta: " + puertaDeEjemplo.abierta);
+    puertaDeEjemplo.abrir();
+    alert("La puerta está abierta: " + puertaDeEjemplo.abierta)
+</script>
+</html>

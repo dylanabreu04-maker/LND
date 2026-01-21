@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let rojo = 0;
+    let azul = 0;
+    let verde = 0;
+    let NumeroVotos = 0;
+
+    let voto = parseInt(prompt("Elija un voto 1(rojo), 2(azul), 3(verde), 0(fin)"));
+    while (voto != "0") {
+        let voto = parseInt(prompt("Elija un voto 1(rojo), 2(azul), 3(verde), 0(fin)"));
+        if (voto = "1") {
+            rojo++;
+        }
+        if (voto = "2") {
+            azul++;
+        }
+        if (voto = "3") {
+            verde++;
+        }
+        if (voto != "1" || "2" || "3" ||"0") {
+            document.write(">>> Voto invalido");
+        }
+        NumeroVotos++;
+
+    }
+    document.write("Rojo: "+ rojo + " votos.");
+    document.write("Rojo: "+ azul + " votos.");
+    document.write("Rojo: "+ verde + " votos.");
+    
+    let PorRojo = rojo / NumeroVotos *100;
+    let PorVerde = verde / NumeroVotos *100;
+    let PorAzul = azul / NumeroVotos *100;
+
+    if (PorRojo > PorVerde && PorRojo > PorAzul) {
+        document.write("El ganador es el rojo con un: " + PorRojo + "%")
+    }
+    if (PorAzul > PorRojo && PorAzul > PorVerde) {
+        document.write("El gandor es el azul con un: " + PorAzul + "%")
+    }
+    if (PorVerde > PorRojo && PorVerde > PorAzul) {
+        document.write("El ganador es el verde con un: " + PorVerde + "%")
+    }
+
+    if (PorRojo == PorVerde) {
+        document.write("Empate")
+    }
+    if (PorRojo == PorAzul) {
+        document.write("Empate")
+    }
+    if (PorAzul == PorVerde) {
+        document.write("Empate")
+    }
+</script>
+</html>

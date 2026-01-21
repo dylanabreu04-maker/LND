@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let contador = 1;
+    let tabla = 1;
+    let n = parseInt(prompt("Ingrese un número entero: "));
+    if (n <= 0) {
+        document.write("Número inválido intentelo de nuevo.");
+    }
+    
+    document.write("-- TABLA DEL" + n + "-- <br>");
+    while (contador <=10)
+    {
+        let suma = 0;
+        suma = n * contador;
+        document.write(n + "x" + contador + ":" + suma+ "<br>");
+        contador++;
+    }
+    
+    
+
+    
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class pokemon{
+        nivel;
+        nombre;
+        ataque;
+        vida;
+        
+        
+        constructor(nivel, nombre)
+        {
+            this.nombre = nombre;
+            this.nivel = nivel;
+            this.ataque = nivel * 2;
+            this.vida = nivel * 5;
+        }
+
+        recibirdanio(valor) 
+        {
+            this.vida -= valor;
+            alert(this.nombre + " le queda " + this.vida + " vida");
+        }
+
+    }
+
+    function batalla(poke1, poke2)
+    {
+        while(poke1.vida > 0 && poke2.vida > 0)
+        {
+            poke1.recibirdanio(poke2.ataque);
+            if (poke1.vida <= 0) return poke2;
+
+            poke2.recibirdanio(poke1.ataque);
+            if (poke2.vida <= 0) return poke1;
+        }
+    }
+    
+    let pokemon1 = new pokemon(10, "charizard");
+    let pokemon2 = new pokemon(10, "bulbasaur");
+
+    alert("El ganador es: " + batalla(pokemon1, pokemon2).nombre);
+    
+
+
+    
+
+    
+</script>
+</html>

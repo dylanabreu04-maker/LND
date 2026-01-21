@@ -1,0 +1,9 @@
+#botonMenu{
+    position: absolute;
+    top: 50%;
+}
+.mostrar{
+    visibility: visible !important;
+    top: 100%;
+}
+

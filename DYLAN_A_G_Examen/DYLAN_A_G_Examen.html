@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //EJERCICIO 1
+    let contador = 1;
+    let NumeroAprobados = 0;
+    let media = 0;
+
+    document.write("-- Inicio del proceso de calificaciones --" + "<br>");
+
+    while (contador <= 5) {
+        let notas = parseInt(prompt("Ingrese la nota: "));
+        document.write("Ingrese la nota "+ contador + ":" + notas);
+
+        if (notas < 0 || notas > 10) {
+            document.write("<br>"+"Nota fuera de rango "+"<br>");
+        }
+
+        document.write("<br>");
+        contador++;
+
+        if (notas >= 5 && notas <=10) {
+            NumeroAprobados ++;
+            media += notas;
+        }
+        
+    }
+    
+    let resultado = media /NumeroAprobados;
+    document.write("<br>" + "<br>");
+    document.write("-- REPORTE ESTADISTICO --" + "<br>");
+    document.write("En total aprobaron: " + NumeroAprobados + "<br>");
+    document.write("La media de las notas es: " + resultado);
+
+
+</script>
+</html>

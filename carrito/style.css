@@ -1,0 +1,9 @@
+body{
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+}
+
+#titulo{
+    
+}
