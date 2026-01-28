@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+#cabecera{
+    text-align: center;
+}
+
+#cuerpo{
+
+}
+
+#piepagina{
+    text-align: center;
+}
