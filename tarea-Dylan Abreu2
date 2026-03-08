@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ticket [
+
+    <!ELEMENT ticket (cabecera, producto+)>
+    <!ELEMENT cabecera (empresa, fecha)>
+    <!ELEMENT empresa (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT producto (nombre, cantidad?, precio, pago)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT pago (tarjeta | efectivo)>
+    <!ELEMENT tarjeta EMPTY>
+    <!ELEMENT efectivo EMPTY>
+
+]>
+
+<ticket>
+
+    <cabecera>
+        <empresa>Supermercados La Compra</empresa>
+        <fecha>2026-02-23</fecha>
+    </cabecera>
+
+    <producto>
+        <nombre>Leche</nombre>
+        <cantidad>2</cantidad>
+        <precio>1.30</precio>
+        <pago>
+
+            <tarjeta/>
+
+        </pago>
+    </producto>
+
+    <producto>
+        <nombre>Pan</nombre>
+        <precio>0.90</precio>
+        <pago>
+
+            <tarjeta/>
+
+        </pago>
+    </producto>
+
+
+</ticket>

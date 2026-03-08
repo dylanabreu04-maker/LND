@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE agenda [
+  <!ELEMENT agenda (contacto+)>
+
+  <!ELEMENT contacto (nombre, telefono, email?)>
+
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT telefono (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+]>
+
+<agenda>
+
+  <contacto>
+    <nombre>Ana Garcia</nombre>
+    <telefono>666111222</telefono>
+    <email>ana@test.com</email>
+    
+  </contacto>
+
+  <contacto>
+    <nombre>Pedro Perez</nombre>
+    <telefono>999888777</telefono>
+    
+  </contacto>
+
+</agenda>

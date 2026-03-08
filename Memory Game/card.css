@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+#movimientos {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#parejas {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+span {
+    font-weight: bold;
+    color: #667eea;
+}
+
+#btn-reiniciar {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#btn-reiniciar:hover {
+    background-color: #764ba2;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 15px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.carta {
+    width: 120px;
+    height: 120px;
+    background-color: #764ba2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+    transition: transform 0.6s; /* ✅ Animación suave */
+    transform-style: preserve-3d; /* ✅ Para efecto 3D */
+}
+
+.carta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Carta boca abajo (oculta el símbolo) */
+.carta.oculta {
+    background-color: #764ba2;
+    color: transparent;
+    transform: rotateY(0deg); /* ✅ Boca abajo */
+}
+
+/* Carta boca arriba (muestra el símbolo) */
+.carta.visible {
+    background-color: white;
+    color: #667eea;
+    animation: voltear 0.3s;
+    transform: rotateY(180deg);
+}
+
+/* Carta encontrada (verde) */
+.carta.encontrada {
+    background-color: #48bb78;
+    color: white;
+    cursor: default;
+    animation: pulso 0.5s;
+    transform: rotateY(180deg); /* ✅ Volteada */
+    animation: pulso 0.5s ease; /* ✅ Efecto cuando coinciden */
+}
+
+/*.carta img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;  Para que la imagen no se deforme 
+    border-radius: 5px;
+}*/
+
+/* Animación de volteo */
+@keyframes voltear {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(90deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+/* Animación cuando encuentra pareja */
+@keyframes pulso {
+    0%, 100% { transform: rotateY(180deg) scale(1); }
+    50% { transform: rotateY(180deg) scale(1.1); }
+}
